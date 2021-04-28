@@ -1,10 +1,10 @@
 package com.gzeinnumer.recyclerviewinfinitecache;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.os.Bundle;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.gzeinnumer.recyclerviewinfinitecache.databinding.ActivityMainBinding;
 
@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
             String data = holder.binding.tv.getText().toString();
             Log.d(getClass().getSimpleName(), "getItemPerIndex: "+data);
-
         }
     }
 }

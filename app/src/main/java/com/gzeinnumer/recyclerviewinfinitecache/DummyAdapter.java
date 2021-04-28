@@ -1,7 +1,6 @@
 package com.gzeinnumer.recyclerviewinfinitecache;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -14,7 +13,7 @@ import java.util.ArrayList;
 public class DummyAdapter extends RecyclerView.Adapter<DummyAdapter.MyHolder> {
 
     private ArrayList<String> list;
-    private ArrayList<DummyAdapter.MyHolder> holders;
+    private final ArrayList<DummyAdapter.MyHolder> holders;
 
     public DummyAdapter(ArrayList<String> list) {
         this.list = new ArrayList<>(list);
@@ -25,6 +24,7 @@ public class DummyAdapter extends RecyclerView.Adapter<DummyAdapter.MyHolder> {
     public void setList(ArrayList<String> list) {
         this.list = list;
         initHolders();
+        notifyDataSetChanged();
     }
 
     private void initHolders() {
