@@ -31,7 +31,6 @@ public class DummyAdapter extends RecyclerView.Adapter<DummyAdapter.MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
         holders.set(position, holder);
-        list.set(position, holder);
     }
 
     ...
