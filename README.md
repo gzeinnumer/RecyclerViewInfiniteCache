@@ -30,6 +30,7 @@ public class DummyAdapter extends RecyclerView.Adapter<DummyAdapter.MyHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
+        holder.setIsRecyclable(false);
         holders.set(position, holder);
     }
 
